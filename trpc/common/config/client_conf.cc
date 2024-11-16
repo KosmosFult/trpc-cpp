@@ -59,10 +59,6 @@ void ServiceProxyConfig::Display() const {
     redis_conf.Display();
   }
 
-  if (mysql_conf.enable) {
-    mysql_conf.Display();
-  }
-
   // SSL/TLS config
   ssl_config.Display();
 

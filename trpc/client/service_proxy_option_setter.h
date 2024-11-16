@@ -19,8 +19,6 @@
 #include <vector>
 
 #include "trpc/client/service_proxy_option.h"
-#include "trpc/common/config/mysql_client_conf.h"
-//#include "trpc/common/config/mysql_connect_pool_conf.h"
 #include "trpc/common/config/redis_client_conf.h"
 #include "trpc/common/config/ssl_conf.h"
 
@@ -56,10 +54,6 @@ void SetOutputByValidInput(const std::any& input, std::any& output);
 // If the field of RedisClientConf isn't the default value, it means that the user has set it and it needs to be
 // assigned.
 void SetOutputByValidInput(const RedisClientConf& input, RedisClientConf& output);
-
-// If the field of MysqlClientConf isn't the default value, it means that the user has set it and it needs to be
-// assigned.
-void SetOutputByValidInput(const MysqlClientConf& input, MysqlClientConf& output);
 
 // If the field of ClientSslConfig isn't the default value, it means that the user has set it and it needs to be
 // assigned.
